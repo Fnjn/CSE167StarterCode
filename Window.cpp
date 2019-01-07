@@ -82,7 +82,7 @@ void Window::display_callback(GLFWwindow* window)
 	glMatrixMode(GL_MODELVIEW);
 	// Load the identity matrix
 	glLoadIdentity();
-	
+
 	// Render objects
 	cube.draw();
 
