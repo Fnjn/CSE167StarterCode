@@ -57,16 +57,16 @@ void setup_opengl_settings()
 	// Disable backface culling to render both sides of polygons
 	glDisable(GL_CULL_FACE);
 	// Set clear color to black
-	glClearColor(0.0, 0.0, 0.0, 0.0);                           
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	// Set shading to smooth
-	glShadeModel(GL_SMOOTH);                                    
+	glShadeModel(GL_SMOOTH);
 	// Auto normalize surface normals
 	glEnable(GL_NORMALIZE);
-	
+
 	// Setup materials
 	setup_materials();
 	// Setup lighting
-	setup_lighting();                                           
+	setup_lighting();
 }
 
 void print_versions()
@@ -77,7 +77,7 @@ void print_versions()
 
 	//If the shading language symbol is defined
 #ifdef GL_SHADING_LANGUAGE_VERSION
-	std::printf("Supported GLSL version is %s.\n", (char *)glGetString(GL_SHADING_LANGUAGE_VERSION));
+	printf("Supported GLSL version is %s.\n", (char *)glGetString(GL_SHADING_LANGUAGE_VERSION));
 #endif
 }
 

@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "Window.h"
 
 const char* window_title = "GLFW Starter Project";
